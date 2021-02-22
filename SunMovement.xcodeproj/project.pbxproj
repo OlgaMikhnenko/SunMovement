@@ -3,29 +3,43 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		A843397E25E3F348008E2B07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A843397D25E3F348008E2B07 /* AppDelegate.swift */; };
 		A843398025E3F348008E2B07 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A843397F25E3F348008E2B07 /* SceneDelegate.swift */; };
-		A843398225E3F348008E2B07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A843398125E3F348008E2B07 /* ViewController.swift */; };
-		A843398525E3F348008E2B07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A843398325E3F348008E2B07 /* Main.storyboard */; };
 		A843398825E3F348008E2B07 /* SunMovement.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A843398625E3F348008E2B07 /* SunMovement.xcdatamodeld */; };
 		A843398A25E3F34A008E2B07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A843398925E3F34A008E2B07 /* Assets.xcassets */; };
 		A843398D25E3F34A008E2B07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A843398B25E3F34A008E2B07 /* LaunchScreen.storyboard */; };
+		A843399825E3F425008E2B07 /* label + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A843399725E3F425008E2B07 /* label + extension.swift */; };
+		A843399C25E3F454008E2B07 /* UIFont + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A843399B25E3F454008E2B07 /* UIFont + extension.swift */; };
+		A84339A525E3F4C3008E2B07 /* stackView + extension .swift in Sources */ = {isa = PBXBuildFile; fileRef = A84339A425E3F4C3008E2B07 /* stackView + extension .swift */; };
+		A84339AE25E3F762008E2B07 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84339AD25E3F762008E2B07 /* CustomViewController.swift */; };
+		A84339BE25E41467008E2B07 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84339BD25E41467008E2B07 /* NetworkManager.swift */; };
+		A84339C125E414AE008E2B07 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84339C025E414AE008E2B07 /* Model.swift */; };
+		A84339D325E43AC9008E2B07 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84339D225E43AC9008E2B07 /* ViewModel.swift */; };
+		D42A7ABAFEF06A936091BDAE /* Pods_SunMovement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97154F2B5506F3E2B7D6F15D /* Pods_SunMovement.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		237F907DDE57FA0A9C4DD657 /* Pods-SunMovement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunMovement.release.xcconfig"; path = "Target Support Files/Pods-SunMovement/Pods-SunMovement.release.xcconfig"; sourceTree = "<group>"; };
+		97154F2B5506F3E2B7D6F15D /* Pods_SunMovement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SunMovement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A843397A25E3F348008E2B07 /* SunMovement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SunMovement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A843397D25E3F348008E2B07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A843397F25E3F348008E2B07 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A843398125E3F348008E2B07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A843398425E3F348008E2B07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A843398725E3F348008E2B07 /* SunMovement.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SunMovement.xcdatamodel; sourceTree = "<group>"; };
 		A843398925E3F34A008E2B07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A843398C25E3F34A008E2B07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A843398E25E3F34A008E2B07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A843399725E3F425008E2B07 /* label + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "label + extension.swift"; sourceTree = "<group>"; };
+		A843399B25E3F454008E2B07 /* UIFont + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + extension.swift"; sourceTree = "<group>"; };
+		A84339A425E3F4C3008E2B07 /* stackView + extension .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "stackView + extension .swift"; sourceTree = "<group>"; };
+		A84339AD25E3F762008E2B07 /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
+		A84339BD25E41467008E2B07 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A84339C025E414AE008E2B07 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		A84339D225E43AC9008E2B07 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		BFF007E7221AC67CB20CECC3 /* Pods-SunMovement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunMovement.debug.xcconfig"; path = "Target Support Files/Pods-SunMovement/Pods-SunMovement.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +47,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D42A7ABAFEF06A936091BDAE /* Pods_SunMovement.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		956AE0C068D21FCC45BEC9C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BFF007E7221AC67CB20CECC3 /* Pods-SunMovement.debug.xcconfig */,
+				237F907DDE57FA0A9C4DD657 /* Pods-SunMovement.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A843397125E3F347008E2B07 = {
 			isa = PBXGroup;
 			children = (
 				A843397C25E3F348008E2B07 /* SunMovement */,
 				A843397B25E3F348008E2B07 /* Products */,
+				956AE0C068D21FCC45BEC9C4 /* Pods */,
+				DDEEB90EAF3B3CC18697E2C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,14 +86,43 @@
 			children = (
 				A843397D25E3F348008E2B07 /* AppDelegate.swift */,
 				A843397F25E3F348008E2B07 /* SceneDelegate.swift */,
-				A843398125E3F348008E2B07 /* ViewController.swift */,
-				A843398325E3F348008E2B07 /* Main.storyboard */,
+				A84339D125E43A70008E2B07 /* extensions */,
+				A84339BD25E41467008E2B07 /* NetworkManager.swift */,
+				A84339AD25E3F762008E2B07 /* CustomViewController.swift */,
+				A84339C025E414AE008E2B07 /* Model.swift */,
+				A84339D225E43AC9008E2B07 /* ViewModel.swift */,
 				A843398925E3F34A008E2B07 /* Assets.xcassets */,
 				A843398B25E3F34A008E2B07 /* LaunchScreen.storyboard */,
 				A843398E25E3F34A008E2B07 /* Info.plist */,
 				A843398625E3F348008E2B07 /* SunMovement.xcdatamodeld */,
 			);
 			path = SunMovement;
+			sourceTree = "<group>";
+		};
+		A843399625E3F3FE008E2B07 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				A843399725E3F425008E2B07 /* label + extension.swift */,
+				A843399B25E3F454008E2B07 /* UIFont + extension.swift */,
+				A84339A425E3F4C3008E2B07 /* stackView + extension .swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		A84339D125E43A70008E2B07 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A843399625E3F3FE008E2B07 /* UIKit */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		DDEEB90EAF3B3CC18697E2C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97154F2B5506F3E2B7D6F15D /* Pods_SunMovement.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +132,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A843399125E3F34A008E2B07 /* Build configuration list for PBXNativeTarget "SunMovement" */;
 			buildPhases = (
+				6B0C0362E4629FEAE7A609D3 /* [CP] Check Pods Manifest.lock */,
 				A843397625E3F348008E2B07 /* Sources */,
 				A843397725E3F348008E2B07 /* Frameworks */,
 				A843397825E3F348008E2B07 /* Resources */,
+				ED781A849992CED3BBE6CCBE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,19 +186,66 @@
 			files = (
 				A843398D25E3F34A008E2B07 /* LaunchScreen.storyboard in Resources */,
 				A843398A25E3F34A008E2B07 /* Assets.xcassets in Resources */,
-				A843398525E3F348008E2B07 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6B0C0362E4629FEAE7A609D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SunMovement-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED781A849992CED3BBE6CCBE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SunMovement/Pods-SunMovement-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SunMovement/Pods-SunMovement-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SunMovement/Pods-SunMovement-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A843397625E3F348008E2B07 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A843398225E3F348008E2B07 /* ViewController.swift in Sources */,
+				A84339D325E43AC9008E2B07 /* ViewModel.swift in Sources */,
+				A84339C125E414AE008E2B07 /* Model.swift in Sources */,
+				A843399C25E3F454008E2B07 /* UIFont + extension.swift in Sources */,
+				A84339AE25E3F762008E2B07 /* CustomViewController.swift in Sources */,
+				A84339A525E3F4C3008E2B07 /* stackView + extension .swift in Sources */,
 				A843398825E3F348008E2B07 /* SunMovement.xcdatamodeld in Sources */,
+				A84339BE25E41467008E2B07 /* NetworkManager.swift in Sources */,
+				A843399825E3F425008E2B07 /* label + extension.swift in Sources */,
 				A843397E25E3F348008E2B07 /* AppDelegate.swift in Sources */,
 				A843398025E3F348008E2B07 /* SceneDelegate.swift in Sources */,
 			);
@@ -150,14 +254,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A843398325E3F348008E2B07 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A843398425E3F348008E2B07 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A843398B25E3F34A008E2B07 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,6 +383,7 @@
 		};
 		A843399225E3F34A008E2B07 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFF007E7221AC67CB20CECC3 /* Pods-SunMovement.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +403,7 @@
 		};
 		A843399325E3F34A008E2B07 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 237F907DDE57FA0A9C4DD657 /* Pods-SunMovement.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
