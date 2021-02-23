@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A800152325E4ECA3004664B6 /* UIView + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A800152225E4ECA3004664B6 /* UIView + extension.swift */; };
+		A800152B25E50677004664B6 /* location + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A800152A25E50677004664B6 /* location + extension.swift */; };
+		A800153125E5093A004664B6 /* background + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A800153025E5093A004664B6 /* background + extension.swift */; };
+		A800153525E50977004664B6 /* animating + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A800153425E50977004664B6 /* animating + extension.swift */; };
+		A800153825E509C6004664B6 /* updating + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A800153725E509C6004664B6 /* updating + extension.swift */; };
+		A800153C25E50A97004664B6 /* constraints + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A800153B25E50A97004664B6 /* constraints + extension.swift */; };
 		A843397E25E3F348008E2B07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A843397D25E3F348008E2B07 /* AppDelegate.swift */; };
 		A843398025E3F348008E2B07 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A843397F25E3F348008E2B07 /* SceneDelegate.swift */; };
 		A843398825E3F348008E2B07 /* SunMovement.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A843398625E3F348008E2B07 /* SunMovement.xcdatamodeld */; };
@@ -25,6 +31,12 @@
 /* Begin PBXFileReference section */
 		237F907DDE57FA0A9C4DD657 /* Pods-SunMovement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunMovement.release.xcconfig"; path = "Target Support Files/Pods-SunMovement/Pods-SunMovement.release.xcconfig"; sourceTree = "<group>"; };
 		97154F2B5506F3E2B7D6F15D /* Pods_SunMovement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SunMovement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A800152225E4ECA3004664B6 /* UIView + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + extension.swift"; sourceTree = "<group>"; };
+		A800152A25E50677004664B6 /* location + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "location + extension.swift"; sourceTree = "<group>"; };
+		A800153025E5093A004664B6 /* background + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "background + extension.swift"; sourceTree = "<group>"; };
+		A800153425E50977004664B6 /* animating + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "animating + extension.swift"; sourceTree = "<group>"; };
+		A800153725E509C6004664B6 /* updating + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "updating + extension.swift"; sourceTree = "<group>"; };
+		A800153B25E50A97004664B6 /* constraints + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "constraints + extension.swift"; sourceTree = "<group>"; };
 		A843397A25E3F348008E2B07 /* SunMovement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SunMovement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A843397D25E3F348008E2B07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A843397F25E3F348008E2B07 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +75,18 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A800152F25E50919004664B6 /* CustomViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A800153425E50977004664B6 /* animating + extension.swift */,
+				A800153025E5093A004664B6 /* background + extension.swift */,
+				A800153B25E50A97004664B6 /* constraints + extension.swift */,
+				A800152A25E50677004664B6 /* location + extension.swift */,
+				A800153725E509C6004664B6 /* updating + extension.swift */,
+			);
+			path = CustomViewController;
+			sourceTree = "<group>";
+		};
 		A843397125E3F347008E2B07 = {
 			isa = PBXGroup;
 			children = (
@@ -86,8 +110,8 @@
 			children = (
 				A843397D25E3F348008E2B07 /* AppDelegate.swift */,
 				A843397F25E3F348008E2B07 /* SceneDelegate.swift */,
-				A84339D125E43A70008E2B07 /* extensions */,
 				A84339BD25E41467008E2B07 /* NetworkManager.swift */,
+				A84339D125E43A70008E2B07 /* extensions */,
 				A84339AD25E3F762008E2B07 /* CustomViewController.swift */,
 				A84339C025E414AE008E2B07 /* Model.swift */,
 				A84339D225E43AC9008E2B07 /* ViewModel.swift */,
@@ -103,8 +127,9 @@
 			isa = PBXGroup;
 			children = (
 				A843399725E3F425008E2B07 /* label + extension.swift */,
-				A843399B25E3F454008E2B07 /* UIFont + extension.swift */,
 				A84339A425E3F4C3008E2B07 /* stackView + extension .swift */,
+				A843399B25E3F454008E2B07 /* UIFont + extension.swift */,
+				A800152225E4ECA3004664B6 /* UIView + extension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -112,6 +137,7 @@
 		A84339D125E43A70008E2B07 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A800152F25E50919004664B6 /* CustomViewController */,
 				A843399625E3F3FE008E2B07 /* UIKit */,
 			);
 			path = extensions;
@@ -241,13 +267,19 @@
 				A84339D325E43AC9008E2B07 /* ViewModel.swift in Sources */,
 				A84339C125E414AE008E2B07 /* Model.swift in Sources */,
 				A843399C25E3F454008E2B07 /* UIFont + extension.swift in Sources */,
+				A800153125E5093A004664B6 /* background + extension.swift in Sources */,
+				A800152325E4ECA3004664B6 /* UIView + extension.swift in Sources */,
 				A84339AE25E3F762008E2B07 /* CustomViewController.swift in Sources */,
 				A84339A525E3F4C3008E2B07 /* stackView + extension .swift in Sources */,
 				A843398825E3F348008E2B07 /* SunMovement.xcdatamodeld in Sources */,
+				A800153C25E50A97004664B6 /* constraints + extension.swift in Sources */,
 				A84339BE25E41467008E2B07 /* NetworkManager.swift in Sources */,
 				A843399825E3F425008E2B07 /* label + extension.swift in Sources */,
 				A843397E25E3F348008E2B07 /* AppDelegate.swift in Sources */,
+				A800153825E509C6004664B6 /* updating + extension.swift in Sources */,
 				A843398025E3F348008E2B07 /* SceneDelegate.swift in Sources */,
+				A800153525E50977004664B6 /* animating + extension.swift in Sources */,
+				A800152B25E50677004664B6 /* location + extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import SwiftyJSON
 import CoreLocation
 
 class CustomViewController: UIViewController, CLLocationManagerDelegate{
@@ -20,15 +19,18 @@ class CustomViewController: UIViewController, CLLocationManagerDelegate{
     let temperatureLabel = UILabel(text: "t", font: .avenir26())
     let sunriseLabel = UILabel(text: "time1", font: .avenir26())
     let sunsetLabel = UILabel(text: "time2", font: .avenir26())
+    let sunImage = UIImageView(image: #imageLiteral(resourceName: "sunPicture"))
+    
     
     var latitude: Double = 0
     var longitude: Double = 0
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.backgroundColor = .white
+        createGradientBackground()
         setupConstraints()
+        animating()
         
     }
     
@@ -41,72 +43,13 @@ class CustomViewController: UIViewController, CLLocationManagerDelegate{
         }
     }
     
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation] ) {
-        if let location = locations.first {
-            latitude = location.coordinate.latitude
-            longitude = location.coordinate.longitude
-            
-            self.networkManager.requestQuote(latitude: latitude, longitude: longitude)
-            self.currentModel = networkManager.currentModel
-            DispatchQueue.main.async {
-                self.updateData(currentModelForShow: self.viewModel.displayStockInfo(currentModel: self.currentModel))
-            }
-            
-        }
-    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    private func updateData(currentModelForShow : CustomScreenForShow) {
-        self.cityLabel.text = currentModelForShow.city
-        self.temperatureLabel.text = currentModelForShow.temperature
-        self.sunriseLabel.text = currentModelForShow.sunrise
-        self.sunsetLabel.text = currentModelForShow.sunset
-    }
-
 }
 
 
-// MARK: - Setup constraints
-extension CustomViewController {
-    private func setupConstraints() {
-        
-        
-        let bottomStackView = UIStackView(arrangedSubviews: [
-            sunriseLabel,
-            sunsetLabel
-        ],
-                                          axis: .horizontal,
-                                          spacing: 3)
-        
-        cityLabel.translatesAutoresizingMaskIntoConstraints = false
-        temperatureLabel.translatesAutoresizingMaskIntoConstraints = false
-       
-        bottomStackView.translatesAutoresizingMaskIntoConstraints = false
-        
-        view.addSubview(cityLabel)
-        view.addSubview(temperatureLabel)
-        view.addSubview(bottomStackView)
-        
-        NSLayoutConstraint.activate([
-            cityLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 130),
-            cityLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
-        ])
-        
-        NSLayoutConstraint.activate([
-            temperatureLabel.topAnchor.constraint(equalTo: cityLabel.topAnchor, constant: 40),
-            temperatureLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
-        ])
-        
-        NSLayoutConstraint.activate([
-            bottomStackView.topAnchor.constraint(equalTo: view.bottomAnchor, constant: -130),
-            bottomStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
-            bottomStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40)
-        ])
-         
-    }
-}
 // MARK: - SwiftUI
 import SwiftUI
 
