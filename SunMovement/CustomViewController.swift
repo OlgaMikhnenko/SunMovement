@@ -8,6 +8,7 @@
 import UIKit
 import CoreLocation
 
+
 class CustomViewController: UIViewController, CLLocationManagerDelegate{
     
     let viewModel = ViewModel()

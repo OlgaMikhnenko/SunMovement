@@ -32,9 +32,10 @@ class NetworkManager : NSObject {
         
         let json = JSON(data)
         let city = json["name"].string
-        let temperature = json["main"]["temp"].float
+        let temperature = json["main"]["temp"].float 
         let sunriseJSON = json["sys"]["sunrise"].double
         let sunsetJSON = json["sys"]["sunset"].double
+        
         
         self.currentModel.city = city
         self.currentModel.temperature = temperature

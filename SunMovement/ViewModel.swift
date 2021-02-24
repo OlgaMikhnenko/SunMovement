@@ -26,7 +26,8 @@ class ViewModel : NSObject {
         }
         
         if let temperature = temperature {
-            self.currentModel.temperature = "\(temperature)"
+            let degrees = round(temperature - 273.15)
+            self.currentModel.temperature = "\(degrees) °С"
         } else {
             self.currentModel.temperature = "Нет данных"
         }
